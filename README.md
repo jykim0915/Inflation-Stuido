@@ -164,7 +164,7 @@ bq query --use_legacy_sql=false \
 
 | 도구 | 용도 |
 |---|---|
-| Claude Code | 게임 코드, 테스트, 이벤트 기록·수신 서버(`tools/ingest`), 문서 작성. |
+| Claude Code | 게임 코드, 테스트, 이벤트 기록·수신 서버(`tools/ingest`), 문서 작성 |
 | Roblox Studio MCP | Studio에서 스크립트를 넣고 화면을 찍어 확인 |
 | Claude Code | 이 README 초안 (슬라이드와 BigQuery 조회 결과를 읽고 양식에 맞춰 정리) |
 
@@ -183,5 +183,3 @@ bq query --use_legacy_sql=false \
 | 한수정 | PM · 개발 · 아트 | 일정·작업 관리, 프로젝트 초기 세팅(Rojo/Rokit, CI, GitHub 템플릿), 크리처 3D 모델링·모션·이펙트, 첫 5분 튜토리얼(FTUE) 개편, 가방 한도·초코바 팝업, 게임 밖 알림, 맵·가구 꾸미기, 게임 문구 정리, 온보딩 영상 |
 | 김효준 | 메인 개발 · 데이터 | 핵심 시스템(발굴, 펫, 인벤토리, 상점, 방), 튜토리얼, UI, 데이터 분석 파이프라인(BigQuery·Amplitude, 피드백 Slack 연동), 데이터 시트 변환 도구, 테스트 코드 |
 | 김준영 | 개발 · UX · 아트 | 모바일 조작·UI, 플레이 피드백 반영, 아이콘·오라 아트, 맵, 일일 보상, 부스트·로벅스 상품, 도감 |
-
-각자 내린 결정: (작성 필요)
