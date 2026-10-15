@@ -2,7 +2,7 @@
 
 한 줄 요약: 출시 첫 주 약 1,500명이 들어온 Roblox 게임에서, 신규 유저의 절반이 첫 씨앗을 줍기 전에 떠나는 문제를 데이터로 찾아 튜토리얼을 고쳤고(첫 씨앗 발굴 53% → 82%), 다음 날 재방문(D1 4.4% → 4.5%)은 그대로라 보상 구조를 다시 손봤습니다.
 
-공개 URL: 게임 https://www.roblox.com/games/10766418856 (확인 필요) / 발표 슬라이드: (작성 필요)
+공개 URL: 게임 https://www.roblox.com/games/10766418856 (확인 필요) / 발표 슬라이드: https://www.figma.com/design/4iybEgldIq0v4Xwr1QDgyb/%ED%81%AC%EB%A6%AC%EC%B2%98-%EC%94%A8%EC%95%97%EC%9D%84-%EC%BA%90%EC%84%B8%EC%9A%94--%EB%B0%9C%ED%91%9C-PPT?node-id=3028-2&t=ByescWsmkDBmdmH8-1
 
 ## 1. 문제 정의
 
@@ -147,9 +147,22 @@ bq query --use_legacy_sql=false 'SELECT ... FROM `sesac-sd-bigquery-jun.roblox_g
 
 ## 7. AI 사용 공개
 
-- 쓴 도구와 쓴 곳: (작성 필요 — 도구 이름, 어디에 썼는지)
-- 핵심 프롬프트: (작성 필요)
-- 사람이 검증하거나 고친 곳: (작성 필요)
+**쓴 도구와 쓴 곳**
+- Claude Code(Anthropic): 게임 코드 작성·수정, 테스트 코드, 이벤트 기록(Analytics)과 BigQuery 수신 서버(`tools/ingest`) 구현, 문서 작성. 게임 저장소 main 커밋 463개 중 458개에 Claude Code 표시가 있고, 공동 작성자로 Claude Opus 5.5, Fable 5.1, Opus 5, Sonnet 4.6이 남아 있습니다.
+- Roblox Studio MCP: Claude가 Studio에서 직접 스크립트를 넣고 화면을 찍어 확인하는 데 썼습니다.
+- Claude Code: 이 README의 숫자 정리와 초안(슬라이드와 BigQuery 조회 결과를 읽고 양식에 맞춰 작성).
+
+**핵심 프롬프트** (실제로 쓴 요청의 예)
+- "행운 늘어나고 주는 게 너무 느리고 렉이 좀 걸리는 것 같아. 최적화 좀 하자 전체적으로"
+- "확률을 모든 층에서 더 좋은 레어가 뜰 확률이 조금은 있게 수정해 줘"
+- "접속 보상 너무 작아짐. 크게 해"
+- 이 README: "이 양식에 맞춰서 써서 내보내 봐"
+
+**사람이 검증하거나 고친 곳**
+- 게임 화면과 동작은 사람이 Studio에서 직접 플레이해 보고 고칠 점을 다시 요청했습니다. 저장과 게시는 사람이 직접 했습니다.
+- 코드 변경은 PR로 올려 팀원 리뷰 뒤 합쳤고, CI(StyLua·Selene·Rojo 빌드)와 `tools/test_*.luau` 테스트로 검사했습니다.
+- 분석 수치(첫 씨앗 53% → 82%, D1 4.4% → 4.5% 등)는 슬라이드 원본과 대조해 확인해야 합니다. 흐릿하게 읽은 값은 사람이 다시 확인합니다.
+- 가설 채택·기각과 해석, 보상 구조 변경 결정은 사람이 내렸습니다.
 
 ## 8. 나의 역할 (팀원별)
 
