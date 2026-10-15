@@ -2,7 +2,8 @@
 
 한 줄 요약: 출시 첫 주 약 1,500명이 들어온 Roblox 게임에서, 신규 유저의 절반이 첫 씨앗을 줍기 전에 떠나는 문제를 데이터로 찾아 튜토리얼을 고쳤고(첫 씨앗 발굴 53% → 82%), 다음 날 재방문(D1 4.4% → 4.5%)은 그대로라 보상 구조를 다시 손봤습니다.
 
-공개 URL: 게임 https://www.roblox.com/ko/games/131325952471154/unnamed / 발표 슬라이드: https://www.figma.com/design/4iybEgldIq0v4Xwr1QDgyb/%ED%81%AC%EB%A6%AC%EC%B2%98-%EC%94%A8%EC%95%97%EC%9D%84-%EC%BA%90%EC%84%B8%EC%9A%94--%EB%B0%9C%ED%91%9C-PPT?node-id=3028-2&t=ByescWsmkDBmdmH8-1
+공개 URL: 게임 https://www.roblox.com/ko/games/131325952471154/unnamed
+발표 슬라이드: https://www.figma.com/design/4iybEgldIq0v4Xwr1QDgyb/%ED%81%AC%EB%A6%AC%EC%B2%98-%EC%94%A8%EC%95%97%EC%9D%84-%EC%BA%90%EC%84%B8%EC%9A%94--%EB%B0%9C%ED%91%9C-PPT?node-id=3028-2&t=ByescWsmkDBmdmH8-1
 
 ## 1. 문제 정의
 
