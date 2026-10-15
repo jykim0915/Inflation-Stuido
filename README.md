@@ -43,7 +43,7 @@
 | 이벤트 | 50종, 이름은 `장소_요소_행동` 규칙 (예: `room_seed_plant`) |
 | 주요 열 | `event_time`, `event_type`, `event_name`, `user_key`, `session_id`, `session_seconds`, `stage`, `value`, `field1~3`, `props` |
 
-- 로블록스 유저 번호는 저장하지 않고, 소금을 넣어 되돌릴 수 없게 바꾼 `user_key`만 저장합니다.
+- 로블록스 유저 번호는 그대로 저장하지 않고, 되돌릴 수 없는 코드(해시)로 바꾼 `user_key`만 저장합니다. 같은 유저는 항상 같은 값이라 한 사람의 행동을 이어서 볼 수 있습니다.
 - 이벤트 정의와 조회 예시는 게임 저장소의 `docs/analytics-bigquery.md`에 있습니다.
 
 **전처리**
